@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         neptun-sli
 // @namespace    peetftp.ddns.net
-// @version      0.1
+// @version      1.0
 // @description  Neptun kiegészítők
 // @author       Kyle
 // @match        https://neptun1.uni-bge.hu/hallgato/*
@@ -33,8 +33,8 @@ key_log_date = 'logidopontja';
 soundCoin = document.createElement('audio');
 soundAirHorn = document.createElement('audio');
 
-soundCoin.src = 'https://ws.cubbyusercontent.com/p/_b99cf925edff49ff86ed1b4427da953e/coin.mp3/1444408693';
-soundAirHorn.src = 'https://ws.cubbyusercontent.com/p/_cb1f35347de8427c8f2a7ed75d3510c3/airh.mp3/1446463756';
+soundCoin.src = 'https://raw.githubusercontent.com/peetertoth/neptun-sli/master/res/coin.mp3';
+soundAirHorn.src = 'https://raw.githubusercontent.com/peetertoth/neptun-sli/master/res/airh.mp3';
 
 soundCoin.preload = 'auto';
 soundAirHorn.preload = 'auto';
@@ -177,36 +177,10 @@ tablaEleme20.setAttribute('colspan', '3');
 tablaBody.appendChild(tablaSora2);
 tablaSora2.appendChild(tablaEleme20);
 	tablaEleme20.appendChild(pLog);
-/*Menü negyedik sora*//*
-tablaSora3 = document.createElement('tr');
-tablaEleme30 = document.createElement('td');
-	tablaEleme30.align = "center";
-	tablaEleme30.innerText = "Tárgy adatainak kikérése";
-	tablaEleme30.setAttribute('style', 'font-size:120%; color:white');
-tablaEleme31 = document.createElement('td');
-	btnTargyInfo = document.createElement('button');
-	btnTargyInfo.innerText = 'Tárgy infó';
-	btnTargyInfo.setAttribute('style', 'width:100%; height:37px; border-radius:10px');
-	btnTargykod.onclick = function () {
-		titleElement = document.getElementById('upFunction_h_addsubjects_upModal_upmodal_subjectdata_ctl02_Subject_data_for_schedule_upParent_tab_ctl00_upAddSubjects');
-        titleH2 = titleElement.getElementsByTagName('h2')[0];
-        title = titleH2.innerHTML.split('<br>')[0];
-
-        table = document.getElementById('Addsubject_course1_gridCourses_bodytable');
-        tbody = table.getElementsByClassName('scrollablebody')[0];
-
-        strToCopy = "";
-        for (i = 0; i < tbody.children.length; i++) {
-            curr = tbody.children[i];
-            strToCopy += (title + " " + curr.children[1].children[0].innerHTML + " " + curr.children[2].innerHTML + " " + curr.children[6].innerHTML + "\r\n");
-        }
-        prompt("Ctrl+C", strToCopy);
-	};
-tablaBody.appendChild(tablaSora3);
-tablaSora3.appendChild(tablaEleme30);
-tablaSora3.appendChild(tablaEleme31);
-    tablaEleme31.appendChild(btnTargyInfo);*/
-
+	
+/////////////////////////////////
+//VÉGE: Lebegő menü kialakítása//
+/////////////////////////////////
 
 var logoutCheck = function() {
     try {
