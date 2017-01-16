@@ -10,6 +10,7 @@
 // @updateURL    https://raw.githubusercontent.com/peetertoth/neptun-sli/master/neptun-sli.user.js
 // @downloadURL  https://raw.githubusercontent.com/peetertoth/neptun-sli/master/neptun-sli.user.js
 // @require		 https://raw.githubusercontent.com/peetertoth/neptun-sli/feature-change-to-modular/module-extract-class-informations.js
+// @require		 https://raw.githubusercontent.com/peetertoth/neptun-sli/feature-change-to-modular/module-functions.js
 // ==/UserScript==
 
 /////////////////////
