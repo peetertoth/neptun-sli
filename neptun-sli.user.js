@@ -259,7 +259,7 @@ var a = function() {
 				if (nRandom == nCount) {
 					window.location.reload();
 				} else {
-					addLogMessage(log_jegy +'nRandom:' + nRandom + ';nCount:' + nCount);
+					//addLogMessage(log_jegy +'nRandom:' + nRandom + ';nCount:' + nCount);
 					nCount++;
 				}
 			}
